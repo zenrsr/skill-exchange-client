@@ -61,7 +61,7 @@ const Profile = () => {
         const { data } = await UserService.getReviews(userId);
         setReviews(data);
       } catch (error) {
-        // ignore silently
+        // ignore for now
       }
     };
     fetchReviews();
